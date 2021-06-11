@@ -1,7 +1,5 @@
-from process import Processes
-def main():
-    p = Processes()
-    p.run()
-
 if __name__ == "__main__":
-    main()
+    l = [1,2]
+    l2 = 102
+
+    print(hasattr(l,'len'))

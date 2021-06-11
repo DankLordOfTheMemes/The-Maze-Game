@@ -56,7 +56,7 @@ class Menu:
         menu_Tittle.setTextColor("white")
         menu_Tittle.setStyle("bold")
         menu_Tittle.setSize(24)
-        menu_Text = Text(Point(self.win.getWidth()/2,self.win.getHeight()/2),"Please pick one of the following optiond:") #Fixed from Original Project
+        menu_Text = Text(Point(self.win.getWidth()/2,self.win.getHeight()/2),"Please pick one of the following options:") #Fixed from Original Project
         menu_Text.setSize(14)
         menu_Text.setTextColor("white")
         menu_Tittle.draw(self.win)
@@ -67,11 +67,11 @@ class Menu:
         option_1.activate() #Activate the button 1
         option_2.activate() #Activate 2
         option_3.activate() #Activate 3
-        text_Option_1 = Text(Point(self.win.getWidth()-self.win.getWidth()*0.35, self.win.getHeight()*0.35), "5 Games, 20 Lives") #Explination for button 1 (5 games and 20 lives)
+        text_Option_1 = Text(Point(self.win.getWidth()-self.win.getWidth()*0.35, self.win.getHeight()*0.35), "2 Sections, 32 Lives") #Explination for button 1 (5 games and 20 lives)
         text_Option_1.setFill("white")
-        text_Option_2 = Text(Point(self.win.getWidth()-self.win.getWidth()*0.35, self.win.getHeight()*0.30), "10 Games, 15 Lives") #Explination for button 2 (10 games and 15 lives)
+        text_Option_2 = Text(Point(self.win.getWidth()-self.win.getWidth()*0.35, self.win.getHeight()*0.30), "4 Sections, 24 Lives") #Explination for button 2 (10 games and 15 lives)
         text_Option_2.setFill("white")
-        text_Option_3 = Text(Point(self.win.getWidth()-self.win.getWidth()*0.35, self.win.getHeight()*0.25), "15 Games, 10 Lives") #Explination for button 3 (15 games and 10 lives)
+        text_Option_3 = Text(Point(self.win.getWidth()-self.win.getWidth()*0.35, self.win.getHeight()*0.25), "6 Sections, 16 Lives") #Explination for button 3 (15 games and 10 lives)
         text_Option_3.setFill("white")
         text_Option_1.draw(self.win) 
         text_Option_2.draw(self.win) 
@@ -79,13 +79,13 @@ class Menu:
         while True:
             p1 = self.win.getMouse()
             if option_1.clicked(p1):
-                games, lives = 5, 20
+                games, lives = 2, 32
                 break
             elif option_2.clicked(p1):
-                games, lives = 10, 15
+                games, lives = 4, 24
                 break
             elif option_3.clicked(p1):
-                games, lives = 15, 10
+                games, lives = 6, 16
                 break
         menu_Tittle.undraw()
         menu_Text.undraw()
